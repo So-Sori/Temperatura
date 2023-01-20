@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    /* SCSS HEX */
+}
+:root{
+--russian-violet: #6D466B;
+--purple-dark: #412234;
+--crema-light: #EAD7D7;
+--rose-light: #B49FCC;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    padding: 30px;
+
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
+.card{
+    width: 90%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.lado{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 4px var(--purple-dark);
+    background-color: var(--crema-light);
+}
+.btn , .text-area{
+    display: block;
+}
+select{
+    background-color: var(--rose-light);
+    padding:10px 30px;
+    margin: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px var(--purple-dark);
+    text-align: center;
+    font-size: 1rem;
+}
+select option{
+    text-align:left;
+}
+img{
+   width: 10%;
+   margin: 20px;
+}
+.btn{
+    margin:auto;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(255, 255, 255);
+}
+.text-area{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+    width: 65%;
+    height: 45px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.abajo{
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 200px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 1px 3px var(--purple-dark);
+    background-color: var(--crema-light);
+}
+input:hover{
+    box-shadow: 1px 1px var(--purple-dark);
+}
+footer{
+    background-color: var(--crema-light);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--crema-light);
+}
+.copy{
+    width: 40%;
+    color:var(--purple-dark);
+    margin: auto;
+}
+.redes{
+    width: 40%;
+    margin: auto;
+}
+.redes img{
+    width: 50px;
+}
+.redes a{
+    margin:10px 0;
+    padding: 0;
+}
+.copy h2{
+    margin:auto;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .card{
+        width: 90%;
+        height: 100%;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .contenedor{
+        margin: 20px 0;
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 10px 0; */
+    }
+    .copy{
+        width: 100%;
+    }
+    .copy h2{
+        padding: 10px 0;
+    }
+    .redes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 2em;
+        text-align: center;
+        padding: 20px;
+    }
+    .flecha{
+        display: none;
+    }
+    .abajo{
+        padding:20px;
+    }
+    .btn,.text-area{
+    width: 75%;
+    }
+}
+
+/* #Contenedor_Carga{
+	background-color: rgba(250, 240, 245, 0.9);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	-webkit-transition: all 1 ease;
+	-o-transition: all 1 ease;
+	transition: all 1 ease;
+	z-index: 10000;
+
+}
+
+#carga{
+	 
+	border: 15px solid rgb(213, 213, 213);
+	border-top-color: #F4266A;
+	border-top-style: groove;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	margin: auto;
+	-webkit-animation: girar 1.5s linear infinite;
+	-o-animation: girar 1.5s linear infinite;
+	animation: girar 1.5s linear infinite;
+} */
